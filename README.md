@@ -1,6 +1,6 @@
 # Handwriting-Generation-Using-Recurrent-Neural-Networks
 
-This is an implementation of handwriting generation with use of recurrent neural networks (LSTM & GRU) using torch and python. Based on Alex Graves [paper](https://arxiv.org/abs/1308.0850).
+This is an implementation of handwriting generation with use of recurrent neural networks (LSTM & GRU) using torch and python. The work is based on Alex Graves [paper](https://arxiv.org/abs/1308.0850) published in 2013.
 
 
 ## Installation
@@ -29,19 +29,19 @@ $ cd Handwriting-Generation-Using-Recurrent-Neural-Networks
 The pretrained model is saved in models/ directory. Once you get the concept of **Conditional** and **Unconditional** Handwriting Generation you can train your own model by changing the setting in configurations.py.
 
 For training the model use :
-'''
+```
 python main.py --train_conditional
 python main.py --train_unconditional
-'''
+```
 
 ## Validation
 Validation can be simply done by running:
 
-'''
+```
 python main.py --validate_conditional --conditional_model_path /Handwriting-Generation-Project/models/conditional.pt
 python main.py --validate_unconditional --unconditional_model_path /Handwriting-Generation-Project/models/unconditional.pt
 
-'''
+```
 
 ## Credit 
 
