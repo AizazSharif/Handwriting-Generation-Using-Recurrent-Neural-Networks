@@ -17,8 +17,8 @@ def get_args():
     parser.add_argument('--hidden_dim', default=256, type=int, help="Hidden layer dimension")
     parser.add_argument('--num_layers', default=2, type=int, help="Number of recurrent layers")
     parser.add_argument('--recurrent_dropout', default=0, type=float, help="Dropout on recurrent layers")
-    parser.add_argument('--n_gaussian', type=int, default=10, help='# of gaussian mixture components')
-    parser.add_argument('--n_window', type=int, default=5, help='# of gaussian window for conditional model')
+    parser.add_argument('--n_gaussian', type=int, default=20, help='# of gaussian mixture components')
+    parser.add_argument('--n_window', type=int, default=10, help='# of gaussian window for conditional model')
 
     # Optimizer parameters
     parser.add_argument('--optimizer', default="adam", type=str, choices=["adam", "rmsprop"], help="Learning rate")
@@ -26,7 +26,7 @@ def get_args():
     parser.add_argument('--gradient_clipping', default=5, type=float, help="Max norm allowed for a gradient")
 
     # Training parameters
-    parser.add_argument('--nb_epoch', default=100, type=int, help="Number of batches per epoch")
+    parser.add_argument('--nb_epoch', default=250, type=int, help="Number of batches per epoch")
     parser.add_argument('--batch_size', default=32, type=int, help='Batch size')
     parser.add_argument('--n_batch_per_epoch', type=int, default=100, help='Number of batches per epoch')
     parser.add_argument('--bptt', type=int, default=150, help='sequence length')
