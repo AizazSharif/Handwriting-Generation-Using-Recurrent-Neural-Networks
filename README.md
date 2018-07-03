@@ -22,8 +22,6 @@ $ git clone https://github.com/AizazSharif/Handwriting-Generation-Using-Recurren
 $ cd Handwriting-Generation-Using-Recurrent-Neural-Networks
 
 ```
-* Run the **jupyter notebook** command in terminal and open notebooks/results.ipynb file for getting an overview of the whole project. 
-* Go through each cell for a better understanding of the code and dataset.
 
 ## Training
 The pretrained model is saved in models/ directory. Once you get the concept of **Conditional** and **Unconditional** Handwriting Generation you can train your own model by changing the setting in configurations.py.
